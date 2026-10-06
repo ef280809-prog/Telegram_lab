@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Guía educativa completa sobre Telegram, bots, Telegram Bot API y desarrollo web con HTML, CSS, JavaScript y Node.js.">
+<title>Telegram Lab | ConectaWeb</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="announcement"><span class="pulse"></span> PROYECTO ACADÉMICO · DESARROLLO WEB + TELEGRAM BOT API <a href="#laboratorio">Probar el laboratorio <b>↗</b></a></div>
+<header class="site-header">
+  <a class="brand" href="#inicio"><span class="brand-symbol">✦</span><span>TELEGRAM<span class="brand-light">LAB</span><small>CONCECTA · APRENDE · CREA</small></span></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  <nav id="mainNav"><a href="#telegram">Telegram</a><a href="#bots">Bots</a><a href="#api">API</a><a href="#seguridad">Seguridad</a><a href="#laboratorio">Laboratorio</a></nav>
+  <a class="header-cta" href="#laboratorio">Iniciar práctica <span>↗</span></a>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="hero-grid"></div><div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="eyebrow"><span class="eyebrow-dot"></span> GUÍA INTERACTIVA · INFORMÁTICA</div>
+    <h1>La web se conecta.<br><span>Telegram responde.</span></h1>
+    <p class="hero-lead">Explora cómo funciona Telegram, aprende a crear un bot y descubre cómo una página web puede enviar mensajes usando una API, un servidor y buenas prácticas de seguridad.</p>
+    <div class="hero-buttons"><a class="btn btn-primary" href="#telegram">Explorar la guía <span>↓</span></a><a class="btn btn-ghost" href="#laboratorio"><span class="play">▶</span> Probar formulario</a></div>
+    <div class="hero-meta"><div class="meta-avatars"><span>HTML</span><span>CSS</span><span>JS</span></div><div><strong>Una práctica, muchas tecnologías</strong><small>Frontend · Backend · API · Seguridad</small></div></div>
+  </div>
+  <div class="hero-visual">
+    <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+    <div class="telegram-emblem"><div class="emblem-inner">➤</div><span class="emblem-spark s1">✦</span><span class="emblem-spark s2">✧</span></div>
+    <div class="floating-card card-message"><div class="mini-avatar">✈</div><div><b>ConectaBot</b><p>¡Mensaje enviado!</p><small>ahora · ✓✓</small></div><span class="check-badge">✓</span></div>
+    <div class="floating-card card-code"><span class="code-dot"></span><span>API</span><b>200 OK</b><small>Respuesta recibida</small></div>
+    <div class="floating-card card-secure"><span>🔐</span><div><b>Token protegido</b><small>Backend seguro</small></div></div>
+    <div class="visual-caption">DE TU CÓDIGO A UNA CONVERSACIÓN REAL</div>
+  </div>
+  <div class="hero-bottom"><span>01 / INTRODUCCIÓN</span><span>DESLIZA PARA DESCUBRIR <b>↓</b></span></div>
+</section>
+
+<section class="ticker" aria-label="Tecnologías"><div class="ticker-track"><span>TELEGRAM BOT API</span><i>✳</i><span>HTML5</span><i>✳</i><span>CSS3</span><i>✳</i><span>JAVASCRIPT</span><i>✳</i><span>NODE.JS</span><i>✳</i><span>JSON</span><i>✳</i><span>TELEGRAM BOT API</span><i>✳</i><span>HTML5</span><i>✳</i><span>CSS3</span><i>✳</i><span>JAVASCRIPT</span><i>✳</i><span>NODE.JS</span><i>✳</i><span>JSON</span></div></section>
+
+<section class="section intro-section" id="telegram">
+  <div class="section-kicker">01 — CONOCE LA PLATAFORMA</div>
+  <div class="section-heading split-heading"><div><h2>¿Qué es <span>Telegram?</span></h2></div><p>Telegram es una aplicación de mensajería instantánea basada en la nube que permite intercambiar mensajes, archivos y contenido multimedia, además de crear grupos, canales y bots.</p></div>
+  <div class="intro-grid">
+    <article class="feature-card feature-main"><div class="feature-icon blue-icon">✈</div><span class="card-index">PLATAFORMA</span><h3>Comunicación rápida y multidispositivo</h3><p>Permite acceder a conversaciones desde diferentes dispositivos. Los chats en la nube se sincronizan mediante la cuenta del usuario, facilitando la continuidad de la comunicación.</p><div class="feature-tags"><span>Mensajes</span><span>Archivos</span><span>Sincronización</span></div><div class="decor-plane">➤</div></article>
+    <article class="feature-card"><div class="feature-icon violet-icon">◉</div><span class="card-index">COMUNIDADES</span><h3>Grupos y canales</h3><p>Los grupos facilitan conversaciones entre miembros; los canales permiten difundir publicaciones a una audiencia. Cada formato responde a necesidades distintas.</p></article>
+    <article class="feature-card"><div class="feature-icon orange-icon">⚡</div><span class="card-index">AUTOMATIZACIÓN</span><h3>Los bots</h3><p>Son programas que interactúan con usuarios a través de Telegram y pueden responder, ofrecer información o integrarse con servicios externos.</p></article>
+  </div>
+  <div class="fact-strip"><div><strong>Mensajería</strong><span>Texto y multimedia</span></div><div><strong>Multiplataforma</strong><span>Móvil, escritorio y web</span></div><div><strong>Integraciones</strong><span>Bots y servicios externos</span></div><div><strong>Automatización</strong><span>Tareas programadas</span></div></div>
+</section>
+
+<section class="section dark-section" id="bots">
+  <div class="section-kicker light-kicker">02 — AUTOMATIZACIÓN INTELIGENTE</div>
+  <div class="section-heading"><h2>Un bot es más que<br><span>una respuesta automática.</span></h2><p>Un bot de Telegram es una cuenta especial controlada por software. Puede recibir actualizaciones y ejecutar acciones según la lógica que programe su creador.</p></div>
+  <div class="bot-layout">
+    <div class="bot-steps">
+      <div class="bot-step"><span>01</span><div><h3>Recibe una actualización</h3><p>Telegram entrega al bot eventos como mensajes nuevos o comandos enviados por el usuario.</p></div></div>
+      <div class="bot-step"><span>02</span><div><h3>Procesa la información</h3><p>El programa interpreta los datos, valida la solicitud y determina qué acción realizar.</p></div></div>
+      <div class="bot-step"><span>03</span><div><h3>Devuelve una respuesta</h3><p>El bot usa los métodos de la API para responder, enviar contenido o interactuar con otros sistemas.</p></div></div>
+      <div class="bot-step"><span>04</span><div><h3>Registra y controla</h3><p>Un backend puede aplicar permisos, límites, registros técnicos y manejo de errores.</p></div></div>
+    </div>
+    <div class="bot-window"><div class="window-bar"><div><i></i><i></i><i></i></div><span>telegram-bot.js</span><b>● LIVE CONCEPT</b></div><div class="code-area"><div><span class="ln">01</span><code><em>const</em> bot = <strong>createBot</strong>(TOKEN);</code></div><div><span class="ln">02</span><code>bot.<strong>on</strong>(<mark>"message"</mark>, (ctx) =&gt; {</code></div><div><span class="ln">03</span><code>&nbsp; <em>const</em> texto = ctx.message.text;</code></div><div><span class="ln">04</span><code>&nbsp; <strong>validar</strong>(texto);</code></div><div><span class="ln">05</span><code>&nbsp; ctx.reply(<mark>"¡Hola!"</mark>);</code></div><div><span class="ln">06</span><code>});</code></div></div><div class="window-footer"><span><i></i> Ejemplo ilustrativo, no es el backend del formulario</span><span>JavaScript</span></div></div>
+  </div>
+  <div class="use-cases"><div><span>01</span><b>Atención al usuario</b><small>Preguntas frecuentes y orientación</small></div><div><span>02</span><b>Notificaciones</b><small>Avisos de sistemas y eventos</small></div><div><span>03</span><b>Educación</b><small>Recordatorios y recursos didácticos</small></div><div><span>04</span><b>Integración</b><small>Conexión con plataformas y servicios</small></div></div>
+</section>
+
+<section class="section api-section" id="api">
+  <div class="section-kicker">03 — CONEXIÓN TÉCNICA</div>
+  <div class="section-heading split-heading"><div><h2>¿Cómo funciona la<br><span>Telegram Bot API?</span></h2></div><p>La Bot API es una interfaz HTTP que permite a los desarrolladores comunicarse con los bots de Telegram. Los métodos reciben solicitudes y devuelven respuestas estructuradas en JSON.</p></div>
+  <div class="api-flow">
+    <div class="flow-node"><div class="flow-icon browser-icon">▤</div><span>01 · FRONTEND</span><h3>Página web</h3><p>HTML presenta el formulario. CSS da estilo y JavaScript valida los datos.</p></div><div class="flow-arrow"><b>→</b><small>POST /api</small></div>
+    <div class="flow-node highlighted"><div class="flow-icon server-icon">⌘</div><span>02 · BACKEND</span><h3>Servidor Node.js</h3><p>Valida la solicitud y usa el token privado para llamar a Telegram.</p><div class="secure-pill">🔐 Token protegido</div></div><div class="flow-arrow"><b>→</b><small>HTTPS</small></div>
+    <div class="flow-node"><div class="flow-icon telegram-icon">➤</div><span>03 · SERVICIO</span><h3>Telegram API</h3><p>Procesa sendMessage y devuelve un objeto JSON con el resultado.</p></div>
+  </div>
+  <div class="api-details">
+    <div class="api-detail-copy"><span class="mini-label">MÉTODO DE ENVÍO</span><h3><code>sendMessage</code></h3><p>Este método envía texto a un chat identificado por su Chat ID. La solicitud se realiza mediante HTTP POST con los parámetros necesarios.</p><ul><li><b>chat_id:</b> identificador del chat destinatario.</li><li><b>text:</b> contenido textual del mensaje.</li><li><b>parse_mode:</b> opcional, para interpretar formatos compatibles.</li></ul></div>
+    <div class="request-card"><div class="request-top"><span>HTTP REQUEST</span><span class="method">POST</span></div><code class="endpoint">https://api.telegram.org/bot&lt;TOKEN&gt;/sendMessage</code><div class="request-code"><span>{</span><p><i>"chat_id"</i>: <b>"123456789"</b>,</p><p><i>"text"</i>: <b>"Hola desde mi web"</b></p><span>}</span></div><div class="request-note">Ejemplo didáctico. Sustituye los valores por datos propios solo en el entorno privado del servidor.</div></div>
+  </div>
+  <div class="json-row"><div class="json-badge">{ }</div><div><h3>¿Qué es JSON?</h3><p>JSON (JavaScript Object Notation) es un formato ligero para intercambiar datos estructurados. Organiza información mediante pares clave–valor y se utiliza habitualmente en las respuestas de APIs.</p></div><div class="json-example"><span>Respuesta conceptual</span><code>{ "ok": true, "result": { ... } }</code></div></div>
+</section>
+
+<section class="section security-section" id="seguridad">
+  <div class="section-kicker">04 — PROTECCIÓN Y RESPONSABILIDAD</div>
+  <div class="section-heading split-heading"><div><h2>Seguridad desde<br><span>el primer carácter.</span></h2></div><p>Una integración funcional también debe proteger credenciales, validar entradas y limitar el uso indebido. Estas medidas son esenciales antes de publicar una aplicación.</p></div>
+  <div class="security-grid">
+    <article class="security-card"><div class="security-number">01</div><div class="security-icon">🔑</div><h3>Protege el token</h3><p>Guárdalo como variable de entorno en el servidor. Nunca lo escribas en archivos públicos, código frontend o capturas.</p><span class="security-label">CREDENCIALES</span></article>
+    <article class="security-card"><div class="security-number">02</div><div class="security-icon">🛡️</div><h3>Valida cada entrada</h3><p>Comprueba el formato del Chat ID, la longitud del mensaje y los permisos antes de procesar la solicitud.</p><span class="security-label">VALIDACIÓN</span></article>
+    <article class="security-card"><div class="security-number">03</div><div class="security-icon">🚦</div><h3>Evita el abuso</h3><p>Implementa autenticación, límites de solicitudes y controles para impedir envíos masivos o no autorizados.</p><span class="security-label">CONTROL DE USO</span></article>
+    <article class="security-card"><div class="security-number">04</div><div class="security-icon">🔍</div><h3>Trata errores con cuidado</h3><p>No muestres secretos ni trazas internas. Registra lo necesario y presenta mensajes claros para el usuario.</p><span class="security-label">MANEJO DE ERRORES</span></article>
+  </div>
+  <div class="warning-box"><span>⚠</span><div><b>Regla de oro</b><p>El token funciona como una contraseña del bot. Si se filtra, revócalo o genera uno nuevo mediante BotFather y actualiza la variable secreta del servidor.</p></div></div>
+</section>
+
+<section class="section workflow-section" id="pasos">
+  <div class="section-kicker">05 — GUÍA DE IMPLEMENTACIÓN</div>
+  <div class="section-heading"><h2>Del primer paso<br><span>al mensaje recibido.</span></h2><p>Sigue este orden para configurar, ejecutar y comprobar la integración de forma correcta.</p></div>
+  <div class="timeline">
+    <div class="timeline-item"><span class="timeline-count">01</span><div><h3>Crear el bot con BotFather</h3><p>En Telegram busca <code>@BotFather</code>, envía <code>/newbot</code>, elige nombre y usuario. Guarda el token en privado.</p><span class="step-tag">CONFIGURACIÓN</span></div></div>
+    <div class="timeline-item"><span class="timeline-count">02</span><div><h3>Iniciar el bot y obtener el Chat ID</h3><p>Abre el bot y pulsa Iniciar. Envía un mensaje y consulta getUpdates de forma privada para localizar <code>message.chat.id</code>.</p><span class="step-tag">IDENTIFICACIÓN</span></div></div>
+    <div class="timeline-item"><span class="timeline-count">03</span><div><h3>Preparar el entorno</h3><p>Instala Node.js, ejecuta <code>npm install</code>, copia <code>.env.example</code> como <code>.env</code> y agrega el token como variable privada.</p><span class="step-tag">BACKEND</span></div></div>
+    <div class="timeline-item"><span class="timeline-count">04</span><div><h3>Iniciar y probar la web</h3><p>Ejecuta <code>npm start</code>, abre <code>http://localhost:3000</code>, completa el formulario y verifica el mensaje en Telegram.</p><span class="step-tag">PRUEBAS LOCALES</span></div></div>
+    <div class="timeline-item"><span class="timeline-count">05</span><div><h3>Publicar frontend y backend</h3><p>GitHub Pages aloja archivos estáticos; el servidor Node.js debe desplegarse en un servicio compatible y guardar allí la variable secreta.</p><span class="step-tag">PUBLICACIÓN</span></div></div>
+  </div>
+  <div class="hosting-note"><div class="hosting-icon">☁</div><div><b>Importante sobre GitHub Pages</b><p>GitHub Pages no ejecuta Node.js. Para que el envío funcione desde una web pública, el backend debe estar desplegado y la página debe llamar a su endpoint HTTPS. No coloques el token en el frontend.</p></div></div>
+</section>
+
+<section class="section lab-section" id="laboratorio">
+  <div class="lab-backdrop"></div><div class="lab-intro"><div class="section-kicker light-kicker">06 — LABORATORIO INTERACTIVO</div><h2>Tu turno.<br><span>¡Envía un mensaje!</span></h2><p>Prueba el formulario conectado al backend. Completa el Chat ID, escribe el mensaje y confirma que tienes autorización para contactar ese chat.</p><div class="lab-checklist"><span>✓ Validación de campos</span><span>✓ Petición POST con JSON</span><span>✓ Respuesta del servidor</span></div><div class="lab-disclaimer">Para el envío real, el servidor debe estar activo y configurado con el token privado de tu bot.</div></div>
+  <div class="lab-form-wrap"><div class="lab-form-head"><div class="lab-telegram-logo">➤</div><div><b>ConectaBot</b><small>Formulario de envío · Telegram</small></div><span class="online"><i></i> DEMO</span></div>
+    <form id="telegramForm" novalidate>
+      <label for="chatId">CHAT ID <span>*</span></label><input id="chatId" name="chatId" type="text" inputmode="numeric" placeholder="Ej. 123456789" autocomplete="off" required><small class="field-help">ID numérico del chat que inició el bot.</small><div class="error" id="chatError" aria-live="polite"></div>
+      <label for="message">TU MENSAJE <span>*</span></label><textarea id="message" name="message" maxlength="4000" rows="4" placeholder="¡Hola! Este mensaje fue enviado desde mi página web..." required></textarea><div class="char-row"><span id="count">0 / 4000 caracteres</span><span>Texto plano</span></div><div class="error" id="messageError" aria-live="polite"></div>
+      <label class="permission"><input type="checkbox" id="permission"><span>Confirmo que tengo autorización para enviar este mensaje a ese chat.</span></label><div class="error" id="permissionError" aria-live="polite"></div>
+      <button class="send-button" type="submit">Enviar por Telegram <span>↗</span></button><p class="form-privacy">🔒 El token se mantiene en el servidor y no se envía al navegador.</p><div id="result" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+<section class="section faq-section" id="faq">
+  <div class="section-kicker">07 — PREGUNTAS FRECUENTES</div><div class="section-heading split-heading"><div><h2>Resolvemos tus<br><span>dudas técnicas.</span></h2></div><p>Conceptos esenciales para comprender los requisitos y solucionar problemas frecuentes durante la práctica.</p></div>
+  <div class="faq-list">
+    <details><summary>¿Qué es BotFather y para qué sirve?<span>+</span></summary><p>Es el bot oficial de Telegram que permite crear y administrar bots. Mediante comandos como /newbot entrega la configuración inicial y el token de acceso.</p></details>
+    <details><summary>¿Por qué el usuario debe iniciar el bot primero?<span>+</span></summary><p>Un bot no puede iniciar por sí solo una conversación privada con una persona que nunca lo ha contactado. El usuario debe abrirlo y pulsar Iniciar o enviarle un mensaje.</p></details>
+    <details><summary>¿Qué diferencia hay entre frontend y backend?<span>+</span></summary><p>El frontend es la parte visible que funciona en el navegador. El backend se ejecuta en el servidor, procesa solicitudes y guarda secretos como el token de la API.</p></details>
+    <details><summary>¿Qué significa una respuesta HTTP 200?<span>+</span></summary><p>Indica que la solicitud HTTP se procesó correctamente a nivel de protocolo. En la Bot API también se debe revisar el campo JSON “ok” para confirmar el resultado de Telegram.</p></details>
+    <details><summary>¿Por qué puede fallar el envío?<span>+</span></summary><p>Puede faltar el token, ser incorrecto el Chat ID, no haberse iniciado el bot, estar apagado el backend o existir un problema de conexión o permisos. Revisa la respuesta del servidor sin publicar credenciales.</p></details>
+    <details><summary>¿Se puede publicar todo solamente en GitHub Pages?<span>+</span></summary><p>No para esta arquitectura: GitHub Pages sirve contenido estático y no ejecuta Node.js. El frontend puede publicarse allí, pero el backend debe alojarse por separado en un entorno compatible.</p></details>
+  </div>
+</section>
+
+<section class="final-cta"><div class="final-orb">✦</div><div><span>APRENDER · PROGRAMAR · CONECTAR</span><h2>La tecnología cobra sentido<br>cuando la pones en práctica.</h2><p>Explora el código, configura tu bot y documenta cada prueba.</p></div><a href="#laboratorio" class="btn btn-light">Ir al laboratorio ↗</a></section>
+</main>
+<footer class="footer"><div class="footer-main"><a class="brand footer-brand" href="#inicio"><span class="brand-symbol">✦</span><span>TELEGRAM<span class="brand-light">LAB</span><small>CONCECTA · APRENDE · CREA</small></span></a><p>Proyecto académico de Desarrollo Web<br>Integración de una página web con Telegram Bot API.</p><div class="footer-links"><a href="#telegram">Telegram</a><a href="#api">API</a><a href="#seguridad">Seguridad</a><a href="#laboratorio">Laboratorio</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> Telegram Lab · Material educativo</span><strong>Erika Flores 💙</strong><a href="#inicio">Volver arriba ↑</a></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
